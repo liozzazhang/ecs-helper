@@ -54,7 +54,7 @@ make setup
 sudo pip install common-ops
 sudo pip install jarvis-helper
 ```
-##Quick Run
+## Quick Run
 1. start a new project, you can create a consul skeleton .
 ```bash
 # ecs-skeleton + project + region + env
