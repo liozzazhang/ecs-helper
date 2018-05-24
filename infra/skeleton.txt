@@ -1,0 +1,19 @@
+container/cpu=0
+container/image=""
+container/name=
+container/memoryReservation=1024
+container/mountPoints=[{"sourceVolume": "logs-vol", "containerPath": "/opt/logs"}, {"sourceVolume": "data-vol", "containerPath": "/opt/varnish"}, {"sourceVolume": "credential-vol", "containerPath": "/root/.aws"}]
+container/portMappings=[{"protocol": "tcp", "containerPort": 8080, "hostPort": 0}]
+container/privileged=false
+container/essential=true
+deploy/team=
+deploy/region=
+deploy/project=
+deploy/env=
+deploy/format=json
+deploy/tag=ecs
+deploy/deploy_target_uri=
+deploy/target=
+task/taskRoleArn=
+task/volumes=
+

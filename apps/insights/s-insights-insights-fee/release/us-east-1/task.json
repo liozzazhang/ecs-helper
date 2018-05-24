@@ -1,0 +1,50 @@
+{
+    "containerDefinitions": [
+        {
+            "cpu": 0, 
+            "environment": [
+                {
+                    "name": "NAME",
+                    "value": "VALUE"
+                }
+            ], 
+            "essential": true, 
+            "image": "xxx",
+            "memoryReservation": 5120, 
+            "mountPoints": [
+                {
+                    "containerPath": "/opt/logs/", 
+                    "sourceVolume": "logs-vol"
+                }, 
+                {
+                    "containerPath": "/opt/jetty/logs", 
+                    "sourceVolume": "logs-vol"
+                }
+            ], 
+            "name": "",
+            "portMappings": [
+                {
+                    "containerPort": 8080, 
+                    "hostPort": 0, 
+                    "protocol": "tcp"
+                }
+            ], 
+            "privileged": true
+        }
+    ], 
+    "taskRoleArn": "",
+    "volumes": [
+        {
+            "host": {
+                "sourcePath": "/mnt/data/"
+            }, 
+            "name": "data-vol"
+        }, 
+        {
+            "host": {
+                "sourcePath": "/mnt/logs/"
+            }, 
+            "name": "logs-vol"
+        }
+    ]
+}
