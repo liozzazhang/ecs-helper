@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-export LOCAL_DTR=local-dtr.zhihuiya.com
+export LOCAL_DTR=xxx
 export CN_ECR=xxx
 export US_ECR=xxx
 export ENV=prod2
